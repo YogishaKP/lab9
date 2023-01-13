@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+</head>
+
+<body>
+    <br> <br>
+    <div class="container">
+        <form ng-submit="createEntry()">
+            <div class="mt-3">
+                <div class="row">
+                    <div class=" col-md-4">
+                        <label for="name" class="form-label">Toy Name</label>
+                        <input type="text" ng-model="name" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="Dob" class="form-label">Date of manufactured</label>
+                        <input type="date" ng-model="date" class="form-control" required>
+                        <br>
+                        <label for="orVal" class="form-label">Toy Cost</label>
+                        <input type="number" ng-model="orVal" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="gender" class="form-label mt-md-3">Specify Gender</label> <br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gen" ng-model="gender" value="m" required>
+                            <label class="form-check-label" for="">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gen" ng-model="gender" value="f" required>
+                            <label class="form-check-label" for="">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="mt-5  justify-content-center">
+                        <input type="submit" value="Create" class="btn" style="background-color: rgb(34, 128, 168);">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
